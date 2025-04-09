@@ -37,7 +37,16 @@ def read_file(file_path):
 
     return content
 
-# Contoh penggunaan
-# file_path = "Book1.xlsx"  # Bisa ganti dengan file .pdf, .docx, .pptx
-file_path = "study-MarkItDown\word.pdf"  # Ganti dengan path file yang ingin dibaca
-print(read_file(file_path))
+if __name__ == "__main__":
+    file_path = input("Masukkan path file yang ingin dibaca: ").strip()
+    
+    # Periksa apakah file ada
+    if not os.path.exists(file_path):
+        print("File tidak ditemukan!")
+    else:
+        try:
+            content = read_file(file_path)
+            print("\nIsi file:\n")
+            print(content)
+        except Exception as e:
+            print(f"Terjadi error saat membaca file: {e}")
