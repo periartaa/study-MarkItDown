@@ -1,5 +1,6 @@
 ﻿# study-MarkItDown
-MarkItDown adalah paket Python yang dikembangkan oleh Microsoft, yang dirancang untuk mengonversi berbagai format file menjadi Markdown.
+MarkItDown adalah sebuah pustaka (library) Python open-source yang dikembangkan oleh Microsoft. Fungsinya utama adalah untuk mengkonversi berbagai format dokumen ke dalam format Markdown.
+
 
 1. Donlowad respository
    ``` Bash
